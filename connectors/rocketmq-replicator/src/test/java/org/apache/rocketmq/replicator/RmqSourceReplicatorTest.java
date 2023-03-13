@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.apache.rocketmq.replicator;
+package org.apache.rocketmq.connect.replicator;
 
 import java.lang.reflect.Field;
 import java.util.Collections;
@@ -28,7 +28,7 @@ import org.apache.rocketmq.common.protocol.body.TopicList;
 import org.apache.rocketmq.common.protocol.route.QueueData;
 import org.apache.rocketmq.common.protocol.route.TopicRouteData;
 import org.apache.rocketmq.remoting.exception.RemotingException;
-import org.apache.rocketmq.replicator.config.RmqConnectorConfig;
+import org.apache.rocketmq.connect.replicator.config.RmqConnectorConfig;
 import org.apache.rocketmq.tools.admin.DefaultMQAdminExt;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -44,7 +44,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import io.openmessaging.KeyValue;
 import io.openmessaging.internal.DefaultKeyValue;
-import org.apache.rocketmq.replicator.config.ConfigDefine;
+import org.apache.rocketmq.connect.replicator.config.ConfigDefine;
 
 @RunWith(MockitoJUnitRunner.class)
 public class RmqSourceReplicatorTest {

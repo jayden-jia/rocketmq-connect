@@ -1,4 +1,4 @@
-package org.apache.rocketmq.replicator;
+package org.apache.rocketmq.connect.replicator;
 
 import io.openmessaging.KeyValue;
 import io.openmessaging.internal.DefaultKeyValue;
@@ -8,13 +8,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import org.apache.rocketmq.replicator.common.Utils;
-import org.apache.rocketmq.replicator.config.ConfigDefine;
-import org.apache.rocketmq.replicator.config.DataType;
-import org.apache.rocketmq.replicator.config.RmqConnectorConfig;
-import org.apache.rocketmq.replicator.config.TaskDivideConfig;
-import org.apache.rocketmq.replicator.config.TaskTopicInfo;
-import org.apache.rocketmq.replicator.strategy.DivideTaskByConsistentHash;
+import org.apache.rocketmq.connect.replicator.common.Utils;
+import org.apache.rocketmq.connect.replicator.config.ConfigDefine;
+import org.apache.rocketmq.connect.replicator.config.DataType;
+import org.apache.rocketmq.connect.replicator.config.RmqConnectorConfig;
+import org.apache.rocketmq.connect.replicator.config.TaskDivideConfig;
+import org.apache.rocketmq.connect.replicator.config.TaskTopicInfo;
+import org.apache.rocketmq.connect.replicator.strategy.DivideTaskByConsistentHash;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.junit.MockitoJUnitRunner;
